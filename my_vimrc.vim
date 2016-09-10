@@ -55,8 +55,8 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ' '
-let g:mapleader = ' ' 
+let mapleader = "," 
+let g:mapleader = "," 
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -211,7 +211,7 @@ map <space> /
 map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
-map <silent> <leader><cr> :noh<cr>
+map <silent> <space><cr> :noh<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -220,10 +220,11 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
+map <leader>bc :Bclose<cr>:tabclose<cr>gT
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
+
 
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
